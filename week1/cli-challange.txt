@@ -1,0 +1,15 @@
+QUESTION-1: HOW DO I CREATE A HIDDEN FILE OR FOLDER? HOW DO I DISPLAY IT IN THE CLI?
+mkdir .foldername => to create hidden folder
+touch .filename => to create hidden file
+ls -a => to display it in CLI
+
+
+QUESTION-2: HOW DO I CREATE MULTIPLE NESTED DIRECTORIES?
+mkdir -p folder-name/folder-name/foldername => to create multiple nested directories at once inside one another.
+
+QUESTION-3: HOW DO I APPEND A MESSAGE TO A FILE WITHOUT A NEWLINE CHARACTER
+
+echo -n "message" >> folder name.txt
+echo -n "message" >> folder name.txt
+
+
