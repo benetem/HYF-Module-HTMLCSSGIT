@@ -1,0 +1,92 @@
+body {
+  background-color: antiquewhite;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-style: italic;
+  font-size: 20px;
+  padding-left: 20px;
+  color: rgb(179, 114, 93);
+  font-weight: bold;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding-left: 20px;
+  color: dimgrey;
+}
+
+.left-right {
+  display: flex;
+}
+.left-side {
+  background-color: darksalmon;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0px 20px 20px;
+  box-shadow: 0px 5px 10px 0px;
+}
+
+.profile-pic {
+  border-radius: 4% 50% 50% 50%;
+}
+
+.right-side {
+  margin: 20px 20px 20px 0px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.date {
+  color: rgb(179, 114, 93);
+  font-style: italic;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.calendar-icon {
+  position: absolute;
+  margin-left: 20px;
+}
+
+.info-icon {
+  position: absolute;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.info-phar {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.name {
+  text-align: center;
+  font-size: 40px;
+  font-family: fantasy;
+}
+
+.education {
+  color: rgb(179, 114, 93);
+}
+
+ul li {
+  padding: 10px;
+  list-style: none;
+}
+
+.skills li {
+  display: inline;
+  padding: 50px;
+}
+
+ul li.edu-list {
+  font-size: 20px;
+  font-style: italic;
+}
+.list-date {
+  margin-left: 60px;
+}
