@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  padding: 1% 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: left;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: black;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.nav-contact {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.main-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.main {
+  display: flex;
+  padding: 0% 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-heading {
+  font-size: 4em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.main-paragraph {
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-right: 200px;
+  padding-right: 40px;
+  text-align: left;
+}
+
+.main-right {
+  margin-top: 0%;
+}
+
+.logos ul {
+  display: flex;
+  padding: 1% 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logos ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.middle {
+  background-color: #f3f6f9;
+}
+
+.aside-item {
+  display: flex;
+  margin: 100px;
+  padding-bottom: 50px;
+  justify-content: space-evenly;
+}
+
+.title-text {
+  font-size: 32px;
+  margin: 100px;
+  padding-top: 100px;
+  text-align: left;
+  display: block;
+}
+
+.aside-points {
+  padding: 20px;
+  text-align: left;
+}
+
+.aside-points h4 {
+  font-size: 20px;
+}
+
+.aside-points p {
+  font-size: 18px;
+}
+
+.text-box {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.text-box :nth-child(1) {
+  color: #0bbf53;
+  background: #e8f7eb;
+  width: 5%;
+  margin: auto;
+  padding: 10px;
+}
+
+.text-box h2 {
+  font-size: 4em;
+  padding: 20px;
+}
+
+.text-box :nth-child(3) {
+  font-size: 25px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 50px;
+}
+
+.last-item {
+  text-align: center;
+  background-color: #0bbf53;
+  position: relative;
+  margin-top: 100px;
+  height: 200px;
+  justify-content: center;
+}
+
+.last-item h2 {
+  text-align: center;
+  margin: 20px;
+  padding-top: 75px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.last-item a {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 20px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 7px;
+}
+
+footer {
+  display: flex;
+
+  background-color: #00122c;
+}
+
+footer div {
+  padding: 60px;
+}
+
+footer div ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+footer div ul li {
+  list-style: none;
+  padding: 5px;
+}
+/* I am screwed up here. I searched a lot, applied every rule I've seen but I couldnt fix it for the mobile screen*/
+@media (max-width: 680px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .aside-points {
+    width: 100%;
+  }
+}
