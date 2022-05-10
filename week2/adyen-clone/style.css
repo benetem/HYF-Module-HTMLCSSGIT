@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 nav {
   display: flex;
   padding: 1% 10%;
@@ -51,16 +55,18 @@ nav {
   font-size: 16px;
   border-radius: 10px;
 }
+
 .main {
   display: flex;
   padding: 0% 10%;
-  justify-content: space-between;
-  align-items: center;
+}
+
+.main-left {
+  padding: 3em 0em;
 }
 
 .main-heading {
   font-size: 4em;
-  font-family: Arial, Helvetica, sans-serif;
   margin: 20px;
   padding: 20px;
   margin-left: 0px;
@@ -69,14 +75,11 @@ nav {
 
 .main-paragraph {
   font-size: 1.2em;
-  font-family: Arial, Helvetica, sans-serif;
   margin: 20px;
-  padding: 20px;
   margin-left: 0px;
-  padding-left: 0px;
-  margin-right: 200px;
-  padding-right: 40px;
+  margin-right: 100px;
   text-align: left;
+  font-weight: 300;
 }
 
 .main-right {
@@ -85,33 +88,31 @@ nav {
 
 .logos ul {
   display: flex;
-  padding: 1% 10%;
-  justify-content: space-between;
+  margin: 0em, 5em;
+  justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .logos ul li {
   list-style: none;
-  display: inline-block;
-  padding: 8px 12px;
-  position: relative;
 }
 
 .middle {
   background-color: #f3f6f9;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .aside-item {
   display: flex;
-  margin: 100px;
-  padding-bottom: 50px;
+  margin: 0em 5em;
   justify-content: space-evenly;
 }
 
 .title-text {
   font-size: 32px;
   margin: 100px;
-  padding-top: 100px;
   text-align: left;
   display: block;
 }
@@ -123,24 +124,30 @@ nav {
 
 .aside-points h4 {
   font-size: 20px;
+  margin-bottom: 2em;
+  font-weight: bolder;
 }
 
 .aside-points p {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .text-box {
   text-align: center;
   width: 100%;
   position: relative;
+  margin: 0em, 5em;
 }
 
 .text-box :nth-child(1) {
   color: #0bbf53;
   background: #e8f7eb;
-  width: 5%;
-  margin: auto;
-  padding: 10px;
+  text-align: center;
+  width: 100px;
+  margin: 2em;
+  border: 10px solid #e8f7eb;
+  display: inline-block;
 }
 
 .text-box h2 {
@@ -153,6 +160,8 @@ nav {
   padding-left: 200px;
   padding-right: 200px;
   padding-top: 50px;
+  margin: 0em, 5em;
+  font-weight: 300;
 }
 
 .last-item {
@@ -166,27 +175,26 @@ nav {
 
 .last-item h2 {
   text-align: center;
-  margin: 20px;
-  padding-top: 75px;
+  padding: 40px;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .last-item a {
   background-color: white;
-  border: none;
+  border: 10px solid white;
   color: black;
-  padding: 20px 50px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   border-radius: 7px;
+  font-weight: 600;
 }
 
 footer {
   display: flex;
-
+  flex-wrap: wrap;
   background-color: #00122c;
 }
 
@@ -206,15 +214,76 @@ footer div ul li {
   list-style: none;
   padding: 5px;
 }
-/* I am screwed up here. I searched a lot, applied every rule I've seen but I couldnt fix it for the mobile screen*/
-@media (max-width: 680px) {
+
+.footer-right {
+  position: relative;
+}
+
+.footer-right h3 {
+  color: white;
+  margin-bottom: 1em;
+}
+
+.footer-right p {
+  color: white;
+  font-size: 10px;
+}
+
+.footer-right input {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  height: 50px;
+  width: 300px;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.footer-right a {
+  margin: 10px;
+}
+@media screen and (max-width: 680px) {
   .nav-links {
     display: none;
   }
-}
-
-@media screen and (max-width: 680px) {
   .aside-points {
     width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .aside-item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video {
+    width: 100%;
+    height: 100%;
+  }
+  .main-button {
+    margin: 10px 50px;
+    align-items: center;
+    display: block;
+  }
+  .main-paragraph {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .logos ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .text-box :nth-child(3) {
+    padding: 1em;
   }
 }
